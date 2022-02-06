@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18685" started-at="2022-02-05T20:21:10 IST" finished-at="2022-02-05T20:21:29 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18685" started-at="2022-02-05T20:21:10 IST" finished-at="2022-02-05T20:21:29 IST">
+      <class name="com.pages.Testpage">
+        <test-method status="PASS" signature="getCustomerList()[pri:0, instance:com.pages.Testpage@5bb21b69]" name="getCustomerList" duration-ms="18632" started-at="2022-02-05T20:21:10 IST" finished-at="2022-02-05T20:21:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCustomerList -->
+      </class> <!-- com.pages.Testpage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

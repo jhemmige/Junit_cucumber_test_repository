@@ -1,0 +1,71 @@
+1. IF for any reason browser fails to get launched while running maven. Include TestRunnerTest class . 
+TestRunner class should always end with Test only then maven identifies it for running 
+
+2. updating cucumber version to the current version of 7.2.3, fails to intialize the browser cos the extenreport adapter is not updated for the this version.
+Hence I am retaining 6.9.0. 
+If we have to run the cucumber later version 7.2.3, just comment the adapter dependency in pom.xml 
+
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter--> 
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber6-adapter</artifactId>
+			<version>2.9.0</version>
+		</dependency>
+
+
+
+and remove "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" in testrunnertest class, then the tests run perfectly fine.
+
+
+	
+	
+	
+	
+	THESE ARE DEPENDENCIES NOT NEEDED . HENCE STORED HERE>
+	<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>3.1.0</version>
+				</plugin>
+				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.22.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.5.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.8.2</version>
+				</plugin>
+				<!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.7.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>3.0.0</version>
+				</plugin>
+				
+				
+				<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
